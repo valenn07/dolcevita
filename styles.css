@@ -1,0 +1,129 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #222; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+header {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ff6f61;
+    text-decoration: none;
+}
+
+/* Logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 50px; /* Tamaño del logo */
+    height: auto;
+    border-radius: 50%; /* Si se desea circular */
+}
+
+/* Estilo para el título "Dolce Vita" */
+.logo-container h1 {
+    font-family: 'Dancing Script', cursive; /* Fuente cursiva de Google Fonts */
+    font-size: 3rem; /* Tamaño grande */
+    color: #ff6f61; /* Color temático */
+    letter-spacing: 2px;
+    margin-left: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilo para "Nuestros Postres" */
+h2 {
+    font-style: italic; /* Cursiva */
+    font-size: 2rem; /* Ajustar el tamaño */
+    text-align: center; /* Centramos el texto */
+    margin: 20px 0; /* Espaciado arriba y abajo */
+    color: #ffb347; /* Color diferente al título */
+}
+
+/* Estilo de los postres */
+.postre {
+    margin: 20px;
+    padding: 20px;
+    background-color: #444; /* Fondo de los postres */
+    border-radius: 8px;
+    text-align: center;
+}
+
+.postre img {
+    width: 100%; /* Hacer la imagen responsiva */
+    height: auto;
+    max-width: 300px; /* Tamaño máximo */
+    border-radius: 8px;
+}
+
+.precio {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+/* Estilo de botones */
+button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffb347; /* Cambiar color al pasar el mouse */
+}
+
+/* Estilo para la sección de contacto */
+#contacto {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Colocar los elementos uno debajo del otro */
+        margin: 10px 0; /* Espaciado */
+    }
+
+    .logo-container h1 {
+        font-size: 2.5rem; /* Reducir tamaño en móvil */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Reducir tamaño en móvil */
+    }
+
+    .postre {
+        margin: 10px; /* Reducir márgenes en móvil */
+    }
+}
+/* Estilo para el logo de Instagram */
+.icono-instagram {
+    width: 30px; /* Ajustar el tamaño del ícono */
+    height: auto; /* Mantener la proporción */
+    margin-right: 10px; /* Espacio a la derecha del logo */
+    vertical-align: middle; /* Alinear verticalmente con el texto */
+}
