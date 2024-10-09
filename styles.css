@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 .logo {
-    width: 50px; /* Tamaño del logo */
+    width: 100px; /* Tamaño del logo */
     height: auto;
     border-radius: 50%; /* Si se desea circular */
 }
@@ -44,7 +44,7 @@ nav ul li a {
 /* Estilo para el título "Dolce Vita" */
 .logo-container h1 {
     font-family: 'Dancing Script', cursive; /* Fuente cursiva de Google Fonts */
-    font-size: 3rem; /* Tamaño grande */
+    font-size: 5rem; /* Tamaño grande */
     color: #ff6f61; /* Color temático */
     letter-spacing: 2px;
     margin-left: 10px;
@@ -126,4 +126,152 @@ button:hover {
     height: auto; /* Mantener la proporción */
     margin-right: 10px; /* Espacio a la derecha del logo */
     vertical-align: middle; /* Alinear verticalmente con el texto */
+}
+/* Estilos del modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+    justify-content: center;
+    align-items: center;
+    padding: 10px; /* Agregamos padding para que no esté pegado a los bordes */
+}
+
+/* Contenido del modal */
+.modal-content {
+    background-color: #4f4f4f;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    max-width: 500px; /* Hacemos el ancho máximo más pequeño */
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Sombra para un mejor efecto visual */
+    overflow: hidden; /* Evita que el contenido se desborde */
+}
+
+/* Botón de cerrar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Estilos de las imágenes dentro del modal */
+.modal-content img {
+    width: 100%; /* La imagen ahora ocupa todo el ancho disponible */
+    height: auto; /* Mantener la proporción de la imagen */
+    margin: 10px 0;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+    .modal-content {
+        padding: 15px;
+        width: 90%; /* Ajustamos el ancho para que ocupe menos espacio en móviles */
+    }
+    
+    /* Disminuimos el tamaño del botón de cerrar en móviles */
+    .close {
+        font-size: 24px;
+    }
+}
+
+/* Estilos para la sección "Sobre Nosotros" */
+#sobre-nosotros {
+    background-color: #333; /* Fondo oscuro */
+    color: #f4f4f4; /* Texto claro */
+    padding: 50px 20px; /* Espaciado */
+    text-align: center;
+    margin-top: 50px;
+}
+
+#sobre-nosotros h2 {
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#sobre-nosotros p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Estilos del pie de página */
+footer {
+    background-color: #333; /* Fondo oscuro para el pie de página */
+    color: #f4f4f4; /* Texto claro */
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 20px 0; /* Espaciado arriba y abajo */
+    width: 100%; /* Se asegura de que el footer cubra todo el ancho de la página */
+     /* Fija el footer al final de la pantalla */
+    bottom: 0; /* Alinea el footer al fondo de la pantalla */
+}
+
+/* Aseguramos que el contenido no lo tape */
+body {
+    margin: 0;
+    padding-bottom: 60px; /* Espacio para que el contenido no quede oculto detrás del footer */
+}
+
+/* Estilos para la sección "Sobre Nosotros" */
+#sobre-nosotros {
+    background-color: #333; /* Fondo oscuro */
+    color: #f4f4f4; /* Texto claro */
+    padding: 50px 20px; /* Espaciado general */
+    text-align: center; /* Centra el texto */
+    margin-top: 50px;
+}
+
+#sobre-nosotros h2 {
+    font-size: 28px;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#sobre-nosotros p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilos para el eslogan */
+/* Estilos para el eslogan */
+.eslogan {
+    background-color: #444; /* Fondo ligeramente más claro */
+    color: #7a7126; /* Color dorado para el texto del eslogan */
+    padding: 30px; /* Espaciado dentro del contenedor del eslogan */
+    margin: 40px auto; /* Espaciado arriba y abajo */
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 700px; /* Limita el ancho */
+    font-style: italic; /* Aplica cursiva */
+    font-family: 'Georgia', serif; /* Fuente más elegante y clásica */
+    font-weight: bold; /* Aumenta el grosor de la letra para hacerlo más llamativo */
+    text-align: center; /* Centra el texto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar un efecto más llamativo */
+}
+
+.eslogan h3 {
+    font-size: 26px; /* Tamaño de fuente más grande para destacar */
+    margin: 0; /* Sin márgenes extra */
+    letter-spacing: 1px; /* Espaciado entre letras para más legibilidad */
 }

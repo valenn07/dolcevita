@@ -66,3 +66,24 @@ document.getElementById('finalizar-compra').addEventListener('click', () => {
 document.addEventListener('DOMContentLoaded', () => {
     actualizarCarrito();
 });
+// Función para abrir el modal
+function verDetalles(postre) {
+    var modal = document.getElementById('modal-' + postre);
+    modal.style.display = "block";
+}
+
+// Función para cerrar el modal
+function cerrarModal(postre) {
+    var modal = document.getElementById('modal-' + postre);
+    modal.style.display = "none";
+}
+
+// Cerrar el modal cuando el usuario hace clic fuera de él
+window.onclick = function(event) {
+    var modales = document.getElementsByClassName('modal');
+    for (var i = 0; i < modales.length; i++) {
+        if (event.target == modales[i]) {
+            modales[i].style.display = "none";
+        }
+    }
+}

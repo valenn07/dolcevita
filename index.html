@@ -17,8 +17,9 @@
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Postres</a></li>
+                <li><a href="#postres">Postres</a></li>
                 <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
             </ul>
         </nav>
     </header>
@@ -27,41 +28,74 @@
         <section id="postres">
             <h2>Nuestros Postres</h2>
             <div class="postre">
-                <img src="imgb.jpg" alt="Budín de Mandarina">
-                <h3>Budín de Mandarina</h3>
-                <p>Un budín suave y esponjoso con toques de mandarina fresca.</p>
+                <img src="g2.jpeg" alt="Budín de Mandarina">
+                <h3>Cookies</h3>
+                <p>Cookies caseras con chips de chocolate, con un sabor irresistible.</p>
                 <p class="precio">Precio: <span>$300</span></p>
-                <button>Ver más detalles</button> <!-- Cambié a "Ver más detalles" -->
+                <button onclick="verDetalles('mandarina')">Ver más detalles</button>
             </div>
-
-            <div class="postre">
-                <img src="choco.jpg" alt="Chocotorta">
-                <h3>Chocotorta</h3>
-                <p>La clásica chocotorta con capas de galletitas y dulce de leche.</p>
-                <p class="precio">Precio: <span>$500</span></p>
-                <button>Ver más detalles</button> <!-- Cambié a "Ver más detalles" -->
-            </div>
-
-            <div class="postre">
-                <img src="Tiramisu.jpg" alt="Tiramisú">
-                <h3>Tiramisú</h3>
-                <p>Un postre italiano cremoso con un toque de café y cacao.</p>
-                <p class="precio">Precio: <span>$600</span></p>
-                <button>Ver más detalles</button> <!-- Cambié a "Ver más detalles" -->
-            </div>
+            
+            <div id="modal-mandarina" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="cerrarModal('mandarina')">&times;</span>
+                    <h2>Cookies</h2>
+                    <img src="galletas.jpeg" alt="Galleta imagen 1">
+                    <img src="g2.jpeg" alt="Galletas imagen 2">
+                    <img src="g3.jpeg" alt="Galletas imagen 3">
+                    <p>Postre exquisito y casero.</p>
+                    </div>
+                </div>
+                
+                <div class="postre">
+                    <img src="budin2.png" alt="Chocotorta">
+                    <h3>Budin de Mandarina</h3>
+                    <p>Un budín suave y esponjoso con toques de mandarina fresca.</p>
+                    <p class="precio">Precio: <span>$500</span></p>
+                    <button onclick="verDetalles('chocotorta')">Ver más detalles</button>
+                </div>
+            
+                <!-- Modal para mostrar más detalles del postre Chocotorta -->
+                <div id="modal-chocotorta" class="modal">
+                    <div class="modal-content">
+                        <span class="close" onclick="cerrarModal('chocotorta')">&times;</span>
+                        <h2>Budin de Mandarina</h2>
+                        <img src="choco1.jpg" alt="Chocotorta imagen 1">
+                        <img src="choco2.jpg" alt="Chocotorta imagen 2">
+                        <p>Más detalles sobre la chocotorta.</p>
+                    </div>
+                
+                </div>
+                
         </section>
     </main>
 
     <section id="contacto">
         <h2>Contacto</h2>
         <p>Síguenos en Instagram para más novedades y actualizaciones:</p>
-        <a href="https://www.instagram.com/valentinoml_/" target="_blank">
-            <img src="logoig.png" alt="Instagram" class="icono-instagram">@valentinoml_
+        <a href="https://www.instagram.com/dol.cevita2024/" target="_blank">
+            <img src="logoig.png" alt="Instagram" class="icono-instagram">@Dolce Vita
         </a>
     </section>
+    <section id="sobre-nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            En <strong>Dolce Vita</strong>, somos un grupo de apasionados por la repostería que busca ofrecer postres de la mejor calidad, 
+            utilizando ingredientes frescos y recetas tradicionales. Creemos que cada postre cuenta una historia, y queremos que cada bocado 
+            lleve a nuestros clientes a disfrutar de una experiencia única.
+        </p>
+        <p>
+            Nuestros dos objetivos son cumplir con los requisitos de nuestros clientes y también poder tener un buen precio-calidad.
+        <p>Nosotros decidimos hacer este proyecto ya que hemos visto que no hay variedad de venta tres de elaboración casera compleja, cosa que nosotros sabemos y podemos hacer.</p>
+        </p>
+        <div class="eslogan">
+            <h3>"Postres que hacen la vida más dulce"</h3>
+        </div>
+        
+    </section>
+</main>
 
     <footer>
-        <p>© 2024 Dolce Vita - Proyecto Escolar</p>
+        <p>© 2024 Dolce Vita - Proyecto Escolar </p>
     </footer>
 
     <script src="scripts.js"></script>
